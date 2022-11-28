@@ -8,7 +8,7 @@ const DeshboardLayout = () => {
     const [currentUser, setCurrentUser] = useState([]);
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`http://localhost:5000/users?email=${user.email}`, {
+            const response = await fetch(`https://assignment-12-pi.vercel.app/users?email=${user.email}`, {
                 // headers: {
                 //     authorization: `Bearer ${localStorage.getItem('accessToken')}`
                 // }

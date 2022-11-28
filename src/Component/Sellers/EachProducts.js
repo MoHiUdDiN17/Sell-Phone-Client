@@ -4,7 +4,7 @@ const EachProducts = ({ i, euser, handleDelete }) => {
     const { _id, name, PhotoUrl, location, company, resalePrice, originalPrice, yearsOfUse, posted, sellerName, status } = euser;
     const handleAdvertise = () => {
         const advertise = { name, PhotoUrl, location, company, resalePrice, originalPrice, yearsOfUse, posted, sellerName, status };
-        fetch("http://localhost:5000/advertise", {
+        fetch("https://assignment-12-pi.vercel.app/advertise", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

@@ -25,7 +25,7 @@ const BookingModal = ({ phoneName, price, setPhoneName, photoUrl, id }) => {
         }
         setPhoneName(null);
         toast.success('Booking Confirmed');
-        fetch("http://localhost:5000/order", {
+        fetch("https://assignment-12-pi.vercel.app/order", {
             method: "POST",
             headers: {
                 "content-type": "application/json",
@@ -38,7 +38,7 @@ const BookingModal = ({ phoneName, price, setPhoneName, photoUrl, id }) => {
                 console.log("Success:", data);
                 if (data.acknowledged) {
                     alert('Review is added successfully');
-                    fetch(`http://localhost:5000/update/${id}`, {
+                    fetch(`https://assignment-12-pi.vercel.app/update/${id}`, {
                         method: 'PATCH',
                         headers: {
                             'content-type': 'application/json',
