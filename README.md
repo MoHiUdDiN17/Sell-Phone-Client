@@ -8,8 +8,8 @@ Features : \
 5.Login form with email and password and google sign in and github sign in\
 6.Registration form with full name,photoUrl,email and password \
 8.Dashboard\
-9.Admin,buyers,sellers\
+9.Admin,buyers,sellers
 
 email:"mohiuddin.ngbhs@gmail.com"\
-role: "Admin"\
+role: "Admin"
 
