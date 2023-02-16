@@ -15,7 +15,7 @@ const Home = () => {
     const [photoUrl, setPhotoUrl] = useState(null);
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`https://assignment-12-pi.vercel.app/advertise`, {
+            const response = await fetch(`http://localhost:5000/advertise`, {
                 // headers: {
                 //     authorization: `Bearer ${localStorage.getItem('accessToken')}`
                 // }

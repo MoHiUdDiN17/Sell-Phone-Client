@@ -39,7 +39,7 @@ const Sellers = () => {
             status: "available"
         }
         console.log(review);
-        fetch("https://assignment-12-pi.vercel.app/add-product", {
+        fetch("http://localhost:5000/add-product", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

@@ -51,7 +51,7 @@ const Login = () => {
     }
     const saveUser = (name, email) => {
         const user = { name, email, role: 'Buyer' };
-        fetch(`https://assignment-12-pi.vercel.app/user?email=${user.email}`, {
+        fetch(`http://localhost:5000/user?email=${user.email}`, {
             method: "POST",
             headers: {
                 "content-type": "application/json",

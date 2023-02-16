@@ -9,7 +9,7 @@ const MyProducts = () => {
 
 
     const handleDelete = id => {
-        fetch(`https://assignment-12-pi.vercel.app/delete/${id}`, {
+        fetch(`http://localhost:5000/delete/${id}`, {
             method: 'DELETE',
             headers: {
                 // authorization: `Bearer ${localStorage.getItem('genius-token')}`
@@ -27,7 +27,7 @@ const MyProducts = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`https://assignment-12-pi.vercel.app/myproducts?email=${user.email}`, {
+            const response = await fetch(`http://localhost:5000/myproducts?email=${user.email}`, {
                 // headers: {
                 //     authorization: `Bearer ${localStorage.getItem('accessToken')}`
                 // }

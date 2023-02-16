@@ -28,13 +28,13 @@ function App() {
         },
         {
           path: '/',
-          loader: () => fetch('https://assignment-12-pi.vercel.app/categories'),
+          loader: () => fetch('http://localhost:5000/categories'),
           element: <Home></Home>
         },
         {
           path: '/category/:Id',
           loader: async ({ params }) => {
-            return fetch(`https://assignment-12-pi.vercel.app/category/${params.Id}`)
+            return fetch(`http://localhost:5000/category/${params.Id}`)
           },
           element: <PrivateRoute><EachCategory></EachCategory></PrivateRoute>
         },

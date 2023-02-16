@@ -5,7 +5,7 @@ const AllBuyers = () => {
     const [allBuyers, setAllBuyers] = useState([]);
 
     const handleDelete = id => {
-        fetch(`https://assignment-12-pi.vercel.app/user-delete/${id}`, {
+        fetch(`http://localhost:5000/user-delete/${id}`, {
             method: 'DELETE',
             headers: {
                 // authorization: `Bearer ${localStorage.getItem('genius-token')}`
@@ -23,7 +23,7 @@ const AllBuyers = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`https://assignment-12-pi.vercel.app/user?role=Buyer`, {
+            const response = await fetch(`http://localhost:5000/user?role=Buyer`, {
                 // headers: {
                 //     authorization: `Bearer ${localStorage.getItem('accessToken')}`
                 // }
